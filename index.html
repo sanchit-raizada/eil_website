@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en">
+<html lang="en" style="font-size: 16px;">
 
 <head>
   <meta charset="UTF-8">
@@ -10,20 +10,17 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&amp;family=Outfill:var(--navy);display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 
 <body>
 
   <!-- CURSOR GLOW (desktop) -->
-  <div class="cursor-glow" id="cursorGlow" style="left: 229px; top: 632px;"></div>
+  <div class="cursor-glow" id="cursorGlow" style="left: 1216px; top: 69px;"></div>
 
-  <!-- ═══════════════════════════════════════════
-     SEARCH OVERLAY
-═══════════════════════════════════════════ -->
+  <!-- SEARCH OVERLAY -->
   <div class="search-overlay" id="searchOverlay">
     <div class="search-box">
       <input type="text" id="searchInput" placeholder="Search projects, services, news…">
@@ -31,9 +28,7 @@
     </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════
-     HEADER
-═══════════════════════════════════════════ -->
+  <!-- HEADER -->
   <header class="site-header" id="siteHeader" data-landmark-index="0">
 
     <!-- Top Bar -->
@@ -46,14 +41,29 @@
           <a href="#">Media</a>
           <a href="#">Vigilance</a>
         </div>
+
+
+
+
+
+
         <div class="hdr-top-right">
+          <div class="a11y-bar-inner">
+            <span class="a11y-bar-label"><i class="fa-solid fa-universal-access"></i> Text Size:</span>
+            <button class="a11y-fs-btn" id="fsDecrease" aria-label="Decrease font size"
+              title="Decrease font size">A−</button>
+            <span class="a11y-fs-display" id="fsDisplay">100%</span>
+            <button class="a11y-fs-btn" id="fsIncrease" aria-label="Increase font size"
+              title="Increase font size">A+</button>
+            <span class="a11y-sep">|</span>
+            <button class="a11y-fs-btn" id="fsReset" aria-label="Reset font size" title="Reset">Reset</button>
+          </div>
+
           <div class="hdr-top-social">
-            <a href="#" title="Facebook">f</a>
-            <a href="#" title="X / Twitter">𝕏</a>
-            <a href="#" title="LinkedIn">in</a>
-            <a href="#" class="foot-soc" title="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
+            <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
           </div>
           <button class="hdr-lang">हिंदी</button>
         </div>
@@ -66,18 +76,17 @@
 
         <!-- Logo -->
         <a href="#" class="logo">
-          <img src="./assets/img/logo.png" alt="">
+          <img src="./assets/img/logo.png" alt="Engineers India Limited">
         </a>
 
         <!-- Desktop Nav -->
-        <nav class="desk-nav">
+        <nav class="desk-nav" data-landmark-index="1">
 
-          <!-- Home -->
           <div class="nav-item">
-            <a href="#" class="nav-btn">Home</a>
+            <a href="#home" class="nav-btn">Home</a>
           </div>
 
-          <!-- About – Mega Menu -->
+          <!-- About -->
           <div class="nav-item">
             <button class="nav-btn">About EIL
               <svg viewBox="0 0 10 6">
@@ -88,42 +97,42 @@
               <div class="mega-header">About Engineers India Limited</div>
               <div class="mega-grid mega-grid-3">
                 <div class="mega-card">
-                  <div class="mega-card-icon">🏢</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-building"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Overview</div>
-                    <div class="mega-card-desc">Company profill:var(--navy); vision</div>
+                    <div class="mega-card-desc">Company profile &amp; vision</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">📜</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-scroll"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">History</div>
                     <div class="mega-card-desc">60+ years of excellence</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">👔</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-user-tie"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Leadership</div>
                     <div class="mega-card-desc">Board &amp; management team</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">🏆</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-trophy"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Awards</div>
                     <div class="mega-card-desc">Industry recognition</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">🤝</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-handshake"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Subsidiaries &amp; JVs</div>
                     <div class="mega-card-desc">Group companies</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">📊</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-chart-bar"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Profile</div>
                     <div class="mega-card-desc">Corporate capabilities</div>
@@ -133,7 +142,7 @@
             </div>
           </div>
 
-          <!-- Businesses – Mega Menu -->
+          <!-- Businesses -->
           <div class="nav-item">
             <button class="nav-btn">Businesses
               <svg viewBox="0 0 10 6">
@@ -144,56 +153,56 @@
               <div class="mega-header">Our Business Verticals</div>
               <div class="mega-grid mega-grid-4">
                 <div class="mega-card featured">
-                  <div class="mega-card-icon">🛢️</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-oil-can"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Petroleum Refining</div>
                     <div class="mega-card-desc">Grassroots &amp; expansion projects across India &amp; globally</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">⛽</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-gas-pump"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Onshore Oil &amp; Gas</div>
                     <div class="mega-card-desc">Field development</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">🌊</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-water"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Offshore</div>
                     <div class="mega-card-desc">Deepwater platforms</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">🔗</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-circle-nodes"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Pipeline</div>
                     <div class="mega-card-desc">Cross-country networks</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">🧪</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-flask"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Petrochemicals</div>
                     <div class="mega-card-desc">Integrated complexes</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">🌱</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-seedling"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Fertilizers</div>
                     <div class="mega-card-desc">Nitrogenous plants</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">💧</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-atom"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Green Hydrogen</div>
                     <div class="mega-card-desc">Future energy</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">🏗️</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-helmet-safety"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Infrastructure</div>
                     <div class="mega-card-desc">Ports &amp; terminals</div>
@@ -203,7 +212,7 @@
             </div>
           </div>
 
-          <!-- Services – Mega Menu -->
+          <!-- Services -->
           <div class="nav-item">
             <button class="nav-btn">Services
               <svg viewBox="0 0 10 6">
@@ -214,42 +223,42 @@
               <div class="mega-header">Engineering Services</div>
               <div class="mega-grid mega-grid-3">
                 <div class="mega-card">
-                  <div class="mega-card-icon">📐</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">Pre-FEED</div>
                     <div class="mega-card-desc">Feasibility &amp; conceptual</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">📋</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-clipboard-list"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">FEED</div>
                     <div class="mega-card-desc">Front-end engineering</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">🏭</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-industry"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">EPC</div>
                     <div class="mega-card-desc">Turnkey delivery</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">⚙️</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-gears"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">EPCM</div>
                     <div class="mega-card-desc">Management contracting</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">📈</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-chart-line"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">PMC</div>
                     <div class="mega-card-desc">Project management</div>
                   </div>
                 </div>
                 <div class="mega-card">
-                  <div class="mega-card-icon">🔬</div>
+                  <div class="mega-card-icon"><i class="fa-solid fa-microscope"></i></div>
                   <div class="mega-card-text">
                     <div class="mega-card-title">R&amp;D</div>
                     <div class="mega-card-desc">Proprietary technologies</div>
@@ -259,7 +268,7 @@
             </div>
           </div>
 
-          <!-- Projects – Simple -->
+          <!-- Projects -->
           <div class="nav-item">
             <button class="nav-btn">Projects
               <svg viewBox="0 0 10 6">
@@ -267,12 +276,18 @@
               </svg>
             </button>
             <div class="simple-drop">
-              <a href="#"><span class="simple-drop-icon">🌍</span> Dangote Refinery</a>
-              <a href="#"><span class="simple-drop-icon">🛢️</span> Rajasthan Refinery</a>
-              <a href="#"><span class="simple-drop-icon">⚗️</span> Visakh Modernisation</a>
-              <a href="#"><span class="simple-drop-icon">🔗</span> Dabhol-Bangalore Pipeline</a>
-              <a href="#"><span class="simple-drop-icon">🧪</span> Panipat Naphtha Cracker</a>
-              <a href="#"><span class="simple-drop-icon">📋</span> All Projects →</a>
+              <a href="#projects"><span class="simple-drop-icon"><i class="fa-solid fa-globe"></i></span> Dangote
+                Refinery</a>
+              <a href="#projects"><span class="simple-drop-icon"><i class="fa-solid fa-oil-can"></i></span> Rajasthan
+                Refinery</a>
+              <a href="#projects"><span class="simple-drop-icon"><i class="fa-solid fa-flask"></i></span> Visakh
+                Modernisation</a>
+              <a href="#projects"><span class="simple-drop-icon"><i class="fa-solid fa-circle-nodes"></i></span>
+                Dabhol-Bangalore Pipeline</a>
+              <a href="#projects"><span class="simple-drop-icon"><i class="fa-solid fa-vial"></i></span> Panipat Naphtha
+                Cracker</a>
+              <a href="#projects"><span class="simple-drop-icon"><i class="fa-solid fa-list"></i></span> All Projects
+                →</a>
             </div>
           </div>
 
@@ -284,11 +299,16 @@
               </svg>
             </button>
             <div class="simple-drop">
-              <a href="#"><span class="simple-drop-icon">🌿</span> Net Zero</a>
-              <a href="#"><span class="simple-drop-icon">🤝</span> CSR</a>
-              <a href="#"><span class="simple-drop-icon">🌱</span> Environment</a>
-              <a href="#"><span class="simple-drop-icon">🛡️</span> HSE</a>
-              <a href="#"><span class="simple-drop-icon">📊</span> Governance</a>
+              <a href="#sustainability"><span class="simple-drop-icon"><i class="fa-solid fa-leaf"></i></span> Net
+                Zero</a>
+              <a href="#sustainability"><span class="simple-drop-icon"><i class="fa-solid fa-handshake"></i></span>
+                CSR</a>
+              <a href="#sustainability"><span class="simple-drop-icon"><i class="fa-solid fa-tree"></i></span>
+                Environment</a>
+              <a href="#sustainability"><span class="simple-drop-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                HSE</a>
+              <a href="#sustainability"><span class="simple-drop-icon"><i class="fa-solid fa-scale-balanced"></i></span>
+                Governance</a>
             </div>
           </div>
 
@@ -308,7 +328,7 @@
             </svg>
           </button>
           <button class="btn-primary-sm">Tenders</button>
-          <button class="ham" id="ham">
+          <button class="ham" id="ham" aria-label="Toggle menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -318,53 +338,69 @@
   </header>
 
   <!-- Mobile Nav -->
-  <nav class="mob-nav" id="mobNav" data-landmark-index="1">
-    <div class="mob-nav-item"><a href="#" class="mob-nav-link">Home</a></div>
-    <div class="mob-nav-item">
-      <a href="#about" class="mob-nav-link">About EIL</a>
-      <div class="mob-sub"><a href="#">Overview</a><a href="#">Leadership</a><a href="#">Awards</a></div>
+  <nav class="mob-nav" id="mobNav" aria-label="Mobile navigation">
+    <div class="mob-nav-item"><a href="#home" class="mob-nav-link">Home</a></div>
+    <div class="mob-nav-item has-sub">
+      <button class="mob-nav-link mob-nav-toggle" aria-expanded="false">
+        About EIL <i class="fa-solid fa-chevron-down mob-chevron"></i>
+      </button>
+      <div class="mob-sub">
+        <a href="#about"><i class="fa-solid fa-building"></i> Overview</a>
+        <a href="#about"><i class="fa-solid fa-user-tie"></i> Leadership</a>
+        <a href="#about"><i class="fa-solid fa-trophy"></i> Awards</a>
+      </div>
     </div>
-    <div class="mob-nav-item"><a href="#businesses" class="mob-nav-link">Businesses</a></div>
-    <div class="mob-nav-item"><a href="#services" class="mob-nav-link">Services</a></div>
+    <div class="mob-nav-item has-sub">
+      <button class="mob-nav-link mob-nav-toggle" aria-expanded="false">
+        Businesses <i class="fa-solid fa-chevron-down mob-chevron"></i>
+      </button>
+      <div class="mob-sub">
+        <a href="#businesses"><i class="fa-solid fa-oil-can"></i> Petroleum Refining</a>
+        <a href="#businesses"><i class="fa-solid fa-gas-pump"></i> Onshore Oil &amp; Gas</a>
+        <a href="#businesses"><i class="fa-solid fa-water"></i> Offshore</a>
+        <a href="#businesses"><i class="fa-solid fa-circle-nodes"></i> Pipeline</a>
+        <a href="#businesses"><i class="fa-solid fa-flask"></i> Petrochemicals</a>
+        <a href="#businesses"><i class="fa-solid fa-atom"></i> Green Hydrogen</a>
+      </div>
+    </div>
+    <div class="mob-nav-item has-sub">
+      <button class="mob-nav-link mob-nav-toggle" aria-expanded="false">
+        Services <i class="fa-solid fa-chevron-down mob-chevron"></i>
+      </button>
+      <div class="mob-sub">
+        <a href="#services"><i class="fa-solid fa-compass-drafting"></i> Pre-FEED &amp; FEED</a>
+        <a href="#services"><i class="fa-solid fa-industry"></i> EPC</a>
+        <a href="#services"><i class="fa-solid fa-gears"></i> EPCM</a>
+        <a href="#services"><i class="fa-solid fa-chart-line"></i> PMC</a>
+      </div>
+    </div>
     <div class="mob-nav-item"><a href="#projects" class="mob-nav-link">Projects</a></div>
     <div class="mob-nav-item"><a href="#sustainability" class="mob-nav-link">Sustainability</a></div>
     <div class="mob-nav-item"><a href="#careers" class="mob-nav-link">Careers</a></div>
-    <div style="margin-top:32px;display:flex;flex-direction:column;gap:12px">
-      <button
-        style="background:linear-gradient(135deg,#d9580a,#a83f04);color:#fff;padding:14px;border-radius:8px;font-size:14px;font-weight:600;border:none;cursor:pointer">View
-        Tenders</button>
+    <div class="mob-nav-footer">
+      <button class="mob-tender-btn">View Tenders</button>
     </div>
   </nav>
 
-  <!-- ═══════════════════════════════════════════
-     HERO CAROUSEL
-═══════════════════════════════════════════ -->
+  <!-- HERO CAROUSEL -->
   <section class="hero" id="home">
-
-    <!-- Slides -->
     <div class="hero-slides">
       <div class="hero-slide slide-1"></div>
       <div class="hero-slide slide-2"></div>
-      <div class="hero-slide slide-3"></div>
-      <div class="hero-slide slide-4 active"></div>
+      <div class="hero-slide slide-3 active"></div>
+      <div class="hero-slide slide-4"></div>
     </div>
-
     <div class="hero-grid"></div>
 
-    <!-- Floating Glass Cards -->
-
-
-    <!-- Content -->
     <div class="hero-content">
       <div class="hero-eyebrow">
         <div class="hero-dot"></div>
         Engineers India Limited · Est. 1965
       </div>
-      <h1 class="hero-h1" id="heroTitle" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">Building a
-        <span class="accent">Green</span><br>Energy Future
-      </h1>
-      <p class="hero-sub" id="heroSub" style="opacity: 1; transform: translateY(0px); transition: 0.6s 0.1s;">Leading
-        India's energy transition with Green Hydrogen, Bio-fuels and sustainable engineering solutions.</p>
+      <h1 class="hero-h1" id="heroTitle" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">Global <span
+          class="accent">Presence</span><br>Local Expertise</h1>
+      <p class="hero-sub" id="heroSub" style="opacity: 1; transform: translateY(0px); transition: 0.6s 0.1s;">
+        Significant footprints in MENA, Africa and Asia Pacific with an engineering hub in Abu Dhabi.</p>
       <div class="hero-actions">
         <button class="btn-glass primary"
           onclick="document.getElementById('businesses').scrollIntoView({behavior:'smooth'})">Explore Businesses
@@ -374,36 +410,28 @@
       </div>
     </div>
 
-    <!-- Carousel Controls -->
     <div class="carousel-nav">
       <button class="c-nav-btn" id="prevSlide">‹</button>
       <button class="c-nav-btn" id="nextSlide">›</button>
     </div>
 
-    <!-- Dots -->
     <div class="carousel-dots">
       <div class="c-dot" onclick="goSlide(0)"></div>
       <div class="c-dot" onclick="goSlide(1)"></div>
-      <div class="c-dot" onclick="goSlide(2)"></div>
-      <div class="c-dot active" onclick="goSlide(3)"></div>
+      <div class="c-dot active" onclick="goSlide(2)"></div>
+      <div class="c-dot" onclick="goSlide(3)"></div>
     </div>
 
-    <!-- Slide Counter -->
-    <div class="slide-counter">
-      <strong id="slideNum">04</strong> / 04
-    </div>
+    <div class="slide-counter"><strong id="slideNum">03</strong> / 04</div>
 
-    <!-- Scroll Hint -->
     <div class="scroll-hint">
       <div class="scroll-hint-txt">Scroll</div>
       <div class="scroll-hint-line"></div>
     </div>
 
-    <!-- Progress Bar -->
     <div class="hero-progress" id="heroProgress" style="animation: 5s linear 0s infinite normal none running progress;">
     </div>
 
-    <!-- Stats Bar -->
     <div class="hero-statsbar">
       <div class="statsbar-inner">
         <div class="stat-col">
@@ -426,7 +454,7 @@
     </div>
   </section>
 
-  <!-- ═══ TICKER ═══ -->
+  <!-- TICKER -->
   <div class="ticker-bar">
     <div class="ticker-inner container">
       <div class="ticker-badge">What's New</div>
@@ -449,9 +477,7 @@
     </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════
-     ABOUT – PARALLAX BG
-═══════════════════════════════════════════ -->
+  <!-- ABOUT -->
   <section class="about-parallax" id="about">
     <div class="about-inner container">
       <div class="about-grid">
@@ -463,36 +489,21 @@
             concept to commissioning across the globe.</p>
           <div class="glass-feats">
             <div class="glass-feat">
-              <div class="gf-icon">
-                <i class="fa-solid fa-trophy" style="
-    color: white;
-"></i>
-
-
-
-              </div>
+              <div class="gf-icon"><i class="fa-solid fa-trophy"></i></div>
               <div class="gf-text">
                 <h4>Fortune 500 Clients</h4>
                 <p>Trusted by world's leading energy majors across 27 countries.</p>
               </div>
             </div>
             <div class="glass-feat">
-              <div class="gf-icon">
-                <i class="fa-solid fa-microscope" style="
-    color: white;
-"></i>
-              </div>
+              <div class="gf-icon"><i class="fa-solid fa-microscope"></i></div>
               <div class="gf-text">
                 <h4>In-house R&amp;D</h4>
                 <p>Proprietary technologies developed through decades of applied research.</p>
               </div>
             </div>
             <div class="glass-feat">
-              <div class="gf-icon" style="
-    color: white;
-">
-                <i class="fa-solid fa-leaf"></i>
-              </div>
+              <div class="gf-icon"><i class="fa-solid fa-leaf"></i></div>
               <div class="gf-text">
                 <h4>Net Zero Commitment</h4>
                 <p>Leading India's energy transition with Green Hydrogen &amp; Bio-fuels.</p>
@@ -522,9 +533,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-     BUSINESSES
-═══════════════════════════════════════════ -->
+  <!-- BUSINESSES -->
   <section class="section biz-section" id="businesses">
     <div class="container">
       <div class="reveal in" style="text-align:center;max-width:640px;margin:0 auto">
@@ -535,109 +544,90 @@
       </div>
       <div class="biz-grid">
         <div class="biz-card reveal in">
-          <div class="biz-card-icon">
-            <i class="fa-solid fa-industry"></i>
-          </div>
+          <div class="biz-card-icon"><i class="fa-solid fa-industry"></i></div>
           <h3>Petroleum Refining</h3>
           <p>Grassroots, expansion and modernisation of refineries worldwide.</p>
         </div>
         <div class="biz-card reveal in" style="transition-delay:.07s">
-          <div class="biz-card-icon">
-            <i class="fa-solid fa-gas-pump"></i>
-          </div>
+          <div class="biz-card-icon"><i class="fa-solid fa-gas-pump"></i></div>
           <h3>Onshore Oil &amp; Gas</h3>
           <p>End-to-end services for oil field development and processing.</p>
         </div>
         <div class="biz-card reveal in" style="transition-delay:.14s">
-          <div class="biz-card-icon">
-            <i class="fa-solid fa-ship"></i>
-          </div>
+          <div class="biz-card-icon"><i class="fa-solid fa-ship"></i></div>
           <h3>Offshore Oil &amp; Gas</h3>
           <p>Platform design, subsea engineering and deepwater development.</p>
         </div>
         <div class="biz-card reveal in" style="transition-delay:.21s">
-          <div class="biz-card-icon">
-            <i class="fa-solid fa-link"></i>
-          </div>
+          <div class="biz-card-icon"><i class="fa-solid fa-circle-nodes"></i></div>
           <h3>Pipeline</h3>
           <p>Cross-country pipelines and transportation network design.</p>
         </div>
         <div class="biz-card reveal in" style="transition-delay:.07s">
-          <div class="biz-card-icon">
-            <i class="fa-solid fa-flask"></i>
-          </div>
+          <div class="biz-card-icon"><i class="fa-solid fa-flask"></i></div>
           <h3>Petrochemicals</h3>
           <p>Integrated complexes, polymer plants and specialty chemicals.</p>
         </div>
         <div class="biz-card reveal in" style="transition-delay:.14s">
-          <div class="biz-card-icon">
-            <i class="fa-solid fa-seedling"></i>
-          </div>
+          <div class="biz-card-icon"><i class="fa-solid fa-seedling"></i></div>
           <h3>Fertilizers</h3>
           <p>Nitrogenous and phosphatic fertilizer plant engineering.</p>
         </div>
         <div class="biz-card reveal in" style="transition-delay:.21s">
-          <div class="biz-card-icon">
-            <i class="fa-solid fa-hard-hat"></i>
-          </div>
+          <div class="biz-card-icon"><i class="fa-solid fa-helmet-safety"></i></div>
           <h3>Infrastructure</h3>
           <p>Ports, terminals, roads, buildings and urban development.</p>
         </div>
         <div class="biz-card reveal in" style="transition-delay:.28s">
-          <div class="biz-card-icon">
-            <i class="fa-solid fa-earth-asia"></i>
-
-          </div>
-          <h3>Green Hydrogen</h3>
+          <div class="biz-card-icon"><i class="fa-solid fa-atom"></i></div>
+          <h3>Greec Hydrogen</h3>
           <p>Future-ready H₂ production, storage and distribution systems.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-     SERVICES – PARALLAX BG
-═══════════════════════════════════════════ -->
+  <!-- SERVICES -->
   <section class="srv-parallax section" id="services">
     <div class="srv-inner container">
-      <div class="reveal in">
+      <div class="reveal">
         <div class="sec-tag" style="color:#f09050">Our Services</div>
         <h2 class="sec-h2" style="color:#fff">Comprehensive <em>Engineering</em> Services</h2>
         <p class="sec-p" style="color:rgba(215,228,255,.68)">A full spectrum of services covering every stage of the
           project lifecycle — concept through to commissioning.</p>
       </div>
       <div class="srv-grid">
-        <div class="srv-card reveal in">
-          <div class="srv-num">01</div>
+        <div class="srv-card reveal">
+          <div class="srv-num"></div>
           <h3>Pre-FEED &amp; FEED</h3>
           <p>Feasibility studies, technology selection and front-end engineering design for major projects.</p><a
             href="#" class="srv-link">Learn More →</a>
         </div>
-        <div class="srv-card reveal in" style="transition-delay:.1s">
+        <div class="srv-card reveal" style="transition-delay:.1s">
           <div class="srv-num">02</div>
           <h3>EPCM Services</h3>
           <p>Engineering, Procurement and Construction Management with integrated delivery approach.</p><a href="#"
             class="srv-link">Learn More →</a>
         </div>
-        <div class="srv-card reveal in" style="transition-delay:.2s">
+        <div class="srv-card reveal" style="transition-delay:.2s">
           <div class="srv-num">03</div>
           <h3>Project Management</h3>
           <p>PMC services with proven methodology for schedule, cost, quality and risk control.</p><a href="#"
             class="srv-link">Learn More →</a>
         </div>
-        <div class="srv-card reveal in" style="transition-delay:.1s">
+        <div class="srv-card reveal" style="transition-delay:.1s">
           <div class="srv-num">04</div>
           <h3>EPC Contracting</h3>
           <p>Turnkey EPC delivery on time and budget with stringent quality and HSE standards.</p><a href="#"
             class="srv-link">Learn More →</a>
         </div>
-        <div class="srv-card reveal in" style="transition-delay:.2s">
+        <div class="srv-card reveal" style="transition-delay:.2s">
           <div class="srv-num">05</div>
           <h3>Research &amp; Development</h3>
           <p>Proprietary process technologies, pilot plant studies and applied industrial R&amp;D.</p><a href="#"
             class="srv-link">Learn More →</a>
         </div>
-        <div class="srv-card reveal in" style="transition-delay:.3s">
+        <div class="srv-card reveal" style="transition-delay:.3s">
           <div class="srv-num">06</div>
           <h3>Supply Chain Mgmt</h3>
           <p>Strategic sourcing, vendor qualification, expediting and logistics for critical equipment.</p><a href="#"
@@ -647,60 +637,58 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-     PROJECTS
-═══════════════════════════════════════════ -->
+  <!-- PROJECTS -->
   <section class="section proj-section" id="projects">
     <div class="container">
-      <div class="reveal in">
+      <div class="reveal">
         <div class="sec-tag">Landmark Projects</div>
         <h2 class="sec-h2">Projects that <em>Define</em> an Era</h2>
         <p class="sec-p">From Africa's largest refinery to India's most complex petrochemical complexes — a testament to
           engineering excellence.</p>
       </div>
-      <div class="proj-filters reveal in" style="transition-delay:.1s">
+      <div class="proj-filters reveal" style="transition-delay:.1s">
         <button class="pf-btn active" onclick="filterProj('all',this)">All Projects</button>
         <button class="pf-btn" onclick="filterProj('refinery',this)">Refinery</button>
         <button class="pf-btn" onclick="filterProj('pipeline',this)">Pipeline</button>
         <button class="pf-btn" onclick="filterProj('petrochem',this)">Petrochemicals</button>
       </div>
-      <div class="proj-grid reveal in" style="transition-delay:.2s" id="projGrid">
-        <div class="proj-card" data-cat="refinery" style="">
-          <div class="proj-img crouselImage" style="background-image:url(assets/img/refinery.jpg); "></div>
+      <div class="proj-grid reveal" style="transition-delay:.2s" id="projGrid">
+        <div class="proj-card" data-cat="refinery">
+          <div class="proj-img crouselImage" style="background-image:url(assets/img/refinery.jpg)"></div>
           <div class="proj-overlay"><span class="proj-tag">Refinery · Nigeria</span>
-            <h3>Dangote Refill:var(--navy); Petrochemical Complex</h3>
+            <h3>Dangote Refinery &amp; Petrochemical Complex</h3>
             <p>Africa's largest — 650,000 BPSD capacity EPC</p>
           </div>
         </div>
-        <div class="proj-card" data-cat="refinery" style="">
+        <div class="proj-card" data-cat="refinery">
           <div class="proj-img crouselImage" style="background-image:url(assets/img/refinery_rajasthan.jpg)"></div>
           <div class="proj-overlay"><span class="proj-tag">Refinery · Rajasthan</span>
             <h3>Rajasthan Refinery Project</h3>
             <p>9 MMTPA grassroots refinery with integrated petrochem</p>
           </div>
         </div>
-        <div class="proj-card" data-cat="refinery" style="">
+        <div class="proj-card" data-cat="refinery">
           <div class="proj-img crouselImage" style="background-image:url(assets/img/refinery_vishakh.jpg)"></div>
           <div class="proj-overlay"><span class="proj-tag">Modernization · Vizag</span>
             <h3>Visakh Refinery Modernisation</h3>
             <p>HPCL's 15 MMTPA capacity expansion project</p>
           </div>
         </div>
-        <div class="proj-card" data-cat="petrochem" style="">
+        <div class="proj-card" data-cat="petrochem">
           <div class="proj-img crouselImage" style="background-image:url(assets/img/refinery_panipath.jpg)"></div>
           <div class="proj-overlay"><span class="proj-tag">Petrochemicals · Panipat</span>
             <h3>Panipat Naphtha Cracker</h3>
             <p>World-scale ethylene cracker with polymer units</p>
           </div>
         </div>
-        <div class="proj-card" data-cat="pipeline" style="">
+        <div class="proj-card" data-cat="pipeline">
           <div class="proj-img crouselImage" style="background-image:url(assets/img/dhabal_refinery.jpg)"></div>
           <div class="proj-overlay"><span class="proj-tag">Pipeline · Cross-Country</span>
             <h3>Dabhol–Bangalore Pipeline</h3>
             <p>1400 km high-pressure natural gas transmission</p>
           </div>
         </div>
-        <div class="proj-card" data-cat="petrochem" style="">
+        <div class="proj-card" data-cat="petrochem">
           <div class="proj-img crouselImage" style="background-image:url(assets/img/refinery_gurugovind.png)"></div>
           <div class="proj-overlay"><span class="proj-tag">Polymer · Punjab</span>
             <h3>Guru Gobind Singh Polymer Addition</h3>
@@ -711,45 +699,49 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-     GLOBAL PRESENCE – PARALLAX
-═══════════════════════════════════════════ -->
-
+  <!-- GLOBAL PRESENCE -->
   <section class="global-parallax section" id="global">
-    <div class="global-inner container" style="transform: translateY(610.012px);">
-      <div class="" style="
-    width: 100%;
-">
-
-        <!-- Left: Heading -->
-
-
-
-        <h2 class="gp-heading">Expanding <em>Global </em>Footprint</h2>
-        <p class="sec-p" style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facere
-          quasi id
-          numquam animi, aut
-          repellendus quas labore eum eaque non, commodi voluptas vel? Distinctio ullam deserunt saepe at possimus
-          eligendi temporibus, vero, eius dignissimos dolores neque, laboriosam accusantium ipsum. Ullam minus
-          exercitationem necessitatibus expedita iure fugit consequuntur vitae magnam esse eius. Possimus incidunt
-          consectetur cum vero dicta quisquam, debitis aperiam? Odio explicabo adipisci placeat consequatur numquam
-          quisquam error, modi saepe ullam maxime consequuntur impedit rerum et ex laudantium soluta vitae odit sapiente
-          libero ut omnis aut repellat. Eligendi expedita quis quaerat illum minus dolore saepe in nulla odio aperiam?
-        </p>
-
-
-        <!-- Right: Cards -->
-
+    <div class="global-inner container">
+      <div class="global-content">
+        <h2 class="gp-heading">Expanding <em>Global</em> Footprint</h2>
+        <p class="gp-desc">Engineers India Limited operates across <strong>27+ countries</strong> with a strong
+          engineering hub in Abu Dhabi catering to the Middle East, alongside offices in London, Milan, Shanghai and
+          Kuala Lumpur. From refineries in Nigeria and Algeria to petrochemical complexes in UAE — EIL's global reach
+          reflects six decades of trust built project by project.</p>
+        <div class="gp-stats-row">
+          <div class="gp-stat">
+            <div class="gp-stat-num">27+</div>
+            <div class="gp-stat-lbl">Countries</div>
+          </div>
+          <div class="gp-stat">
+            <div class="gp-stat-num">6</div>
+            <div class="gp-stat-lbl">Overseas Offices</div>
+          </div>
+          <div class="gp-stat">
+            <div class="gp-stat-num">8000+</div>
+            <div class="gp-stat-lbl">Assignments</div>
+          </div>
+          <div class="gp-stat">
+            <div class="gp-stat-num">5.5M+</div>
+            <div class="gp-stat-lbl">Man-hours / Year</div>
+          </div>
+        </div>
+        <div class="gp-regions">
+          <span class="gp-region"><i class="fa-solid fa-location-dot"></i> Middle East &amp; UAE</span>
+          <span class="gp-region"><i class="fa-solid fa-location-dot"></i> Africa (Nigeria, Algeria)</span>
+          <span class="gp-region"><i class="fa-solid fa-location-dot"></i> London &amp; Milan</span>
+          <span class="gp-region"><i class="fa-solid fa-location-dot"></i> Shanghai</span>
+          <span class="gp-region"><i class="fa-solid fa-location-dot"></i> Kuala Lumpur</span>
+          <span class="gp-region"><i class="fa-solid fa-location-dot"></i> South &amp; SE Asia</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-     NEWS
-═══════════════════════════════════════════ -->
+  <!-- NEWS -->
   <section class="section news-section" id="news">
     <div class="container">
-      <div class="reveal in"
+      <div class="reveal"
         style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px">
         <div>
           <div class="sec-tag">Latest News</div>
@@ -758,9 +750,8 @@
         <a href="#" style="font-size:13px;font-weight:600;color:var(--orange)">View All →</a>
       </div>
       <div class="news-grid">
-        <div class="nc reveal in">
-          <div class="nc-img">
-
+        <div class="nc reveal">
+          <div class="nc-img nc-img-1">
             <svg viewBox="0 0 1167 600" style="width:100%;height: 200px;display:block;">
 
               <g id="Layer_1" style="
@@ -1368,15 +1359,14 @@
             </svg>
           </div>
           <div class="nc-body">
-            <div class="nc-date">📅 Feb 12, 2026</div>
-            <h3 style="
-    margin-bottom: unset;
-">EIL delivers robust Q3 Performance with 59% rise in Revenue and 242% growth in Profit After Tax</h3><a href="#"
-              class="nc-link">Read Full Story →</a>
+            <div class="nc-date"><i class="fa-regular fa-calendar"></i> Feb 12, 2026</div>
+            <h3>EIL delivers robust Q3 Performance with 59% rise in Revenue and 242% growth in Profit After Tax</h3>
+            <a href="#" class="nc-link">Read Full Story →</a>
           </div>
         </div>
-        <div class="nc sm reveal in" style="transition-delay:.1s">
-          <div class="nc-img" style="font-size:2rem">
+        <div class="nc sm reveal" style="transition-delay:.1s">
+          <div class="nc-img nc-img-2">
+
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
               y="0px" viewBox="0 0 2200 2200"
               style="enable-background:new 0 0 2200 2200;width: 100%;max-width: 300px;max-height: 200px;"
@@ -1404,16 +1394,17 @@
                 </g>
               </g>
             </svg>
+
+
           </div>
           <div class="nc-body">
-            <div class="nc-date">📅 Jan 17, 2026</div>
-            <h3>EIL to Expand Africa's Biggest Dangote Refinery with expanded scope of work</h3><a href="#"
-              class="nc-link">Read More →</a>
+            <div class="nc-date"><i class="fa-regular fa-calendar"></i> Jan 17, 2026</div>
+            <h3>EIL to Expand Africa's Biggest Dangote Refinery with expanded scope of work</h3>
+            <a href="#" class="nc-link">Read More →</a>
           </div>
         </div>
-        <div class="nc sm reveal in" style="transition-delay:.2s">
-          <div class="nc-img" style="font-size:2rem">
-
+        <div class="nc sm reveal" style="transition-delay:.2s">
+          <div class="nc-img nc-img-3">
 
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
               id="Layer_1" x="0px" y="0px" viewBox="0 0 230 200" xml:space="preserve" style="
@@ -7400,47 +7391,46 @@
               </g>
 
             </svg>
+
           </div>
           <div class="nc-body">
-            <div class="nc-date">📅 Jan 17, 2026</div>
-            <h3>EIL achieves World's Longest Horizontal Directional Drilling for PNCPL Project</h3><a href="#"
-              class="nc-link">Read More →</a>
+            <div class="nc-date"><i class="fa-regular fa-calendar"></i> Jan 17, 2026</div>
+            <h3>EIL achieves World's Longest Horizontal Directional Drilling for PNCPL Project</h3>
+            <a href="#" class="nc-link">Read More →</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-     SUSTAINABILITY – PARALLAX
-═══════════════════════════════════════════ -->
+  <!-- SUSTAINABILITY -->
   <section class="sustain-parallax section" id="sustainability">
     <div class="sustain-inner container">
-      <div class="reveal in" style="text-align:center;max-width:640px;margin:0 auto">
-        <div class="sec-tag" style="color: var(--white);justify-content:center">Sustainability</div>
-        <h2 class="sec-h2">Engineering a <em style="color: var(--white);">Sustainable</em> Tomorrow</h2>
-        <p class="sec-p" style="color: var(--white);margin:0 auto">Responsible engineering at every level — from
-          Net Zero targets to community empowerment and environmental stewardship.</p>
+      <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto">
+        <div class="sec-tag" style="color:var(--white);justify-content:center">Sustainability</div>
+        <h2 class="sec-h2">Engineering a <em style="color:var(--white)">Sustainable</em> Tomorrow</h2>
+        <p class="sec-p" style="color:var(--white);margin:0 auto">Responsible engineering at every level — from Net Zero
+          targets to community empowerment and environmental stewardship.</p>
       </div>
       <div class="sust-grid">
-        <div class="sust-card reveal in">
-          <div class="sust-icon">🌱</div>
+        <div class="sust-card reveal">
+          <div class="sust-icon"><i class="fa-solid fa-seedling"></i></div>
           <h3>Net Zero Commitment</h3>
           <p>Aligned with India's 2070 Net Zero targets through sustainable project practices and technology adoption.
           </p>
         </div>
-        <div class="sust-card reveal in" style="transition-delay:.1s">
-          <div class="sust-icon">💧</div>
+        <div class="sust-card reveal" style="transition-delay:.1s">
+          <div class="sust-icon"><i class="fa-solid fa-droplet"></i></div>
           <h3>Environment</h3>
           <p>Rigorous environmental engineering ensuring minimal ecosystem footprint on every project.</p>
         </div>
-        <div class="sust-card reveal in" style="transition-delay:.2s">
-          <div class="sust-icon">🤝</div>
+        <div class="sust-card reveal" style="transition-delay:.2s">
+          <div class="sust-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
           <h3>CSR Initiatives</h3>
           <p>Empowering communities through education, healthcare, skill development and rural infrastructure.</p>
         </div>
-        <div class="sust-card reveal in" style="transition-delay:.3s">
-          <div class="sust-icon">🛡️</div>
+        <div class="sust-card reveal" style="transition-delay:.3s">
+          <div class="sust-icon"><i class="fa-solid fa-shield-halved"></i></div>
           <h3>HSE Excellence</h3>
           <p>Zero-incident culture embedded in every project with robust health, safety &amp; environment systems.</p>
         </div>
@@ -7448,72 +7438,45 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-     CAREERS
-═══════════════════════════════════════════ -->
-  <section class="section careers-section" id="careers">
-    <div class="container">
-      <div class="careers-inner">
-        <div class="careers-text">
-          <div class="sec-tag" style="color:rgba(255,255,255,.75)">Join Our Team</div>
-          <h2 class="careers-h2">Build Your Career<br>with India's Best</h2>
-          <p class="careers-p">Join 2,600+ engineers and professionals shaping India's energy future. EIL offers global
-            exposure, learning, and a purpose-driven culture.</p>
-        </div>
-        <div class="careers-btns">
-          <button class="btn-white">View Open Positions</button>
-          <button class="btn-outline-wh">Life at EIL</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════════ -->
+  <!-- FOOTER -->
   <footer class="site-footer" data-landmark-index="2">
     <div class="container">
       <div class="foot-grid">
         <div class="foot-brand">
           <div class="foot-logo">
-            <img src="./assets/img/logo.png" alt="">
-
-
+            <img src="./assets/img/logo.png" alt="EIL Logo">
           </div>
           <p class="foot-about">India's premier Engineering Consultancy and EPC company delivering world-class
             engineering solutions from Concept to Commissioning across 27 countries worldwide.</p>
           <div class="foot-socials">
-            <a href="#" class="foot-soc" title="Facebook">f</a>
-            <a href="#" class="foot-soc" title="X">𝕏</a>
-            <a href="#" class="foot-soc" title="LinkedIn">in</a>
-            <a href="#" class="foot-soc" title="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-
+            <a href="#" class="foot-soc" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="foot-soc" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="foot-soc" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="foot-soc" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
         <div class="foot-col">
           <h5>Quick Links</h5>
           <div class="foot-links">
-            <a href="#">About EIL</a>
-            <a href="#">Leadership</a>
-            <a href="#">Businesses</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">Sustainability</a>
-            <a href="#">Careers</a>
+            <a href="#about">About EIL</a>
+            <a href="#about">Leadership</a>
+            <a href="#businesses">Businesses</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#sustainability">Sustainability</a>
+            <a href="#careers">Careers</a>
           </div>
         </div>
         <div class="foot-col">
           <h5>Services</h5>
           <div class="foot-links">
-            <a href="#">Pre-FEED &amp; FEED</a>
-            <a href="#">PMC</a>
-            <a href="#">EPCM</a>
-            <a href="#">EPC</a>
-            <a href="#">Research &amp; Dev</a>
-            <a href="#">Supply Chain</a>
-            <a href="#">Construction</a>
+            <a href="#services">Pre-FEED &amp; FEED</a>
+            <a href="#services">PMC</a>
+            <a href="#services">EPCM</a>
+            <a href="#services">EPC</a>
+            <a href="#services">Research &amp; Dev</a>
+            <a href="#services">Supply Chain</a>
+            <a href="#services">Construction</a>
           </div>
         </div>
         <div class="foot-col">
@@ -7529,7 +7492,6 @@
           </div>
         </div>
       </div>
-
       <div class="foot-bottom">
         <div class="foot-copy">©1965–2026 Engineers India Limited. All rights reserved. | Government of India
           Undertaking</div>
@@ -7542,7 +7504,6 @@
         </div>
       </div>
     </div>
-
     <div class="stock-bar">
       <span>BSE: <span class="stock-val">532178</span></span>
       <span>NSE: EIL</span>
@@ -7553,13 +7514,11 @@
       <span>Last Updated: 06-Mar-2026</span>
     </div>
   </footer>
-  <!-- Back to Top -->
+
   <a href="#home" class="back-top" id="backTop">↑</a>
 
-  <!-- ═══════════════════════════════════════════
-     JAVASCRIPT
-═══════════════════════════════════════════ -->
   <script src="script.js"></script>
+
 
 
 </body>
