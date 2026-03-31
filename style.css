@@ -828,15 +828,15 @@ button {
 }
 
 .slide-1 {
-    background-image: url('assets/img/banner3.jpg')
+    background-image: url('assets/img/banner01.jpg')
 }
 
 .slide-2 {
-    background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1900&q=85')
+    background-image: url('assets/img/banner02.png')
 }
 
 .slide-3 {
-    background-image: url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1900&q=85')
+    background-image: url('assets/img/banner03.jpg')
 }
 
 .slide-4 {
@@ -1733,7 +1733,7 @@ button {
 /* ══ GLOBAL PRESENCE ══ */
 .global-parallax {
     position: relative;
-    background-image: url('assets/img/banner2.jpg');
+    background-image: url('assets/img/parallex_banner2.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center top;
