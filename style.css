@@ -2544,3 +2544,16 @@ button {
 
 
 }
+
+
+
+.search-mic {
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(232, 234, 240, .5);
+    font-size: 22px;
+    cursor: pointer;
+    transition: color .2s;
+}
